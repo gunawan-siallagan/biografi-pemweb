@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografi - Gunawan</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #2563eb, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="text-slate-800 min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-lg shadow border-b">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between h-20 items-center">
+            <a href="index.html" class="text-2xl font-black text-gradient">BioSpace.</a>
+            <div class="space-x-6">
+                <a href="index.html" class="text-slate-500 hover:text-blue-600">Beranda</a>
+                <a href="#" class="text-slate-500 hover:text-blue-600">Tentang</a>
+                <a href="#" class="text-slate-500 hover:text-blue-600">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <main class="pt-32 pb-16 px-4 max-w-6xl mx-auto">
+
+        <a href="index.html" class="text-slate-500 hover:text-blue-600 mb-8 inline-block">
+            ← Kembali ke Beranda
+        </a>
+
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+            <div class="lg:flex">
+
+                <!-- Image -->
+                <div class="lg:w-2/5">
+                    <img class="w-full h-full object-cover" src=alt="Gunawan">
+                </div>
+
+                <!-- Content -->
+                <div class="p-10 lg:w-3/5">
+
+                    <div class="mb-6">
+                        <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-bold">
+                            MAHASISWA TEKNOLOGI INFORMASI
+                        </span>
+                        <h1 class="text-4xl font-bold mt-4">Gunawan</h1>
+                    </div>
+
+                    <!-- Tentang Saya -->
+                    <p class="text-slate-600 mb-4">
+                        Saya adalah mahasiswa aktif Program Studi Teknologi Informasi Universitas Brawijaya yang
+                        memiliki pengalaman dalam komunikasi, pelayanan pelanggan, serta manajemen acara.
+                    </p>
+
+                    <p class="text-slate-600 mb-6">
+                        Saya terbiasa bekerja dengan cepat, teliti, dan komunikatif melalui pengalaman sebagai MC,
+                        moderator, kepanitiaan, serta pekerjaan part-time. Saya memiliki etos kerja yang disiplin dan
+                        siap berkontribusi secara profesional, khususnya dalam pekerjaan part-time selama libur
+                        semester.
+                    </p>
+
+                    <!-- Skills -->
+                    <div class="mb-6">
+                        <h3 class="font-bold mb-3">Keahlian</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="border px-3 py-1 rounded">Public Speaking</span>
+                            <span class="border px-3 py-1 rounded">Pelayanan Pelanggan</span>
+                            <span class="border px-3 py-1 rounded">Kerja Sama Tim</span>
+                            <span class="border px-3 py-1 rounded">Komunikasi Interpersonal</span>
+                            <span class="border px-3 py-1 rounded">Manajemen Acara</span>
+                            <span class="border px-3 py-1 rounded">Leadership</span>
+                            <span class="border px-3 py-1 rounded">Administrasi Dasar</span>
+                            <span class="border px-3 py-1 rounded">Problem Solving</span>
+                            <span class="border px-3 py-1 rounded">Manajemen Waktu</span>
+                        </div>
+                    </div>
+
+                    <!-- Pendidikan -->
+                    <div>
+                        <h3 class="font-bold mb-2">Pendidikan</h3>
+                        <p>D3 Teknologi Informasi</p>
+                        <p class="text-slate-500">Universitas Brawijaya</p>
+                        <p class="text-sm text-slate-400">2025 - 2029</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 border-t mt-auto">
+        <p class="text-slate-400">&copy; 2026 BioSpace - Gunawan</p>
+    </footer>
+
+</body>
+
+</html>

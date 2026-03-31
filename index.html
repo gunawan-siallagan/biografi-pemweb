@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografi Teman</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: rgb(238, 238, 238);
+            /* slate-50 */
+        }
+
+        /* Smooth transition for the carousel sliding */
+        .carousel-inner {
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Gradient Text utility */
+        .text-gradient {
+            background: linear-gradient(135deg, #2563eb, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="text-slate-800 min-h-screen flex flex-col font-sans antialiased overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav
+        class="fixed w-full z-50 bg-white/80 backdrop-blur-lg shadow-[0_1px_3px_0_rgba(0,0,0,0.05)] border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-black text-gradient tracking-tight">Lalapan Soehat</a>
+                </div>
+                <div class="flex space-x-5">
+                    <a href="index.html" class="text-blue-600 font-semibold transition-colors duration-200">Beranda</a>
+                    <a href="#"
+                        class="text-slate-500 hover:text-blue-600 font-medium transition-colors duration-200">Tentang</a>
+                    <a href="#"
+                        class="text-slate-500 hover:text-blue-600 font-medium transition-colors duration-200">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area: Centering the Carousel -->
+    <main class="flex-grow flex items-center justify-center pt-24 pb-12 px-4 w-full">
+
+        <!-- Center Container -->
+        <div
+            class="w-full max-w-5xl bg-white/50 backdrop-blur-sm rounded-[2.5rem] p-6 lg:p-14 relative shadow-2xl shadow-blue-900/5 ring-1 ring-slate-200/50">
+
+            <!-- Header section -->
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-slate-800 mb-4 tracking-tight">Lalapan Soehat
+                    group</h1>
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto">Kenali lebih dekat tim kami<br> Geser dan klik
+                    untuk
+                    membaca biografi mereka.</p>
+            </div>
+
+            <!-- Carousel Component -->
+            <div class="relative group" id="slider-container">
+
+                <!-- Viewport with Overflow Hidden -->
+                <div class="overflow-hidden rounded-3xl relative mx-auto max-w-lg md:max-w-3xl">
+                    <!-- Carousel Sliding Track -->
+                    <div id="carousel-track" class="carousel-inner flex w-full">
+
+                        <!-- Slide 1 (Alex John / Teman 1) -->
+                        <div class="w-full shrink-0 flex justify-center p-4">
+                            <a href="angger.html"
+                                class="block w-full max-w-sm rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 transform md:hover:-translate-y-3 group/card cursor-pointer relative bg-white">
+                                <div class="relative h-96 overflow-hidden">
+                                    <!-- Image scales up slightly on hover -->
+                                    <img src="br-angger.jpeg" alt="Teman 1"
+                                        class="w-full h-full object-cover transform transition-transform duration-700 group-hover/card:scale-105">
+                                    <!-- Gradient Overlay -->
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent">
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-8 transform transition-transform duration-300">
+                                    <div
+                                        class="inline-block px-3 py-1 bg-blue-500 text-white rounded-full text-xs font-semibold tracking-wider mb-3">
+                                        FRONTEND DEV</div>
+                                    <h3 class="text-white text-3xl font-bold tracking-tight mb-1">Angger Wicaksono</h3>
+                                    <p
+                                        class="text-slate-300 text-sm flex items-center mt-2 group-hover/card:text-blue-300 transition-colors">
+                                        Lihat Biografi <i
+                                            class="fas fa-arrow-right ml-2 text-xs transform group-hover/card:translate-x-1 transition-transform"></i>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Slide 2 (Sarah Wijaya / Teman 2) -->
+                        <div class="w-full shrink-0 flex justify-center p-4">
+                            <a href="teman2.html"
+                                class="block w-full max-w-sm rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 transform md:hover:-translate-y-3 group/card cursor-pointer relative bg-white">
+                                <div class="relative h-96 overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                        alt="Teman 2"
+                                        class="w-full h-full object-cover transform transition-transform duration-700 group-hover/card:scale-105">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent">
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-8 transform transition-transform duration-300">
+                                    <div
+                                        class="inline-block px-3 py-1 bg-purple-500 text-white rounded-full text-xs font-semibold tracking-wider mb-3">
+                                        BACKEND DEV</div>
+                                    <h3 class="text-white text-3xl font-bold tracking-tight mb-1">Sarah Wijaya</h3>
+                                    <p
+                                        class="text-slate-300 text-sm flex items-center mt-2 group-hover/card:text-purple-300 transition-colors">
+                                        Lihat Biografi <i
+                                            class="fas fa-arrow-right ml-2 text-xs transform group-hover/card:translate-x-1 transition-transform"></i>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Slide 3 (Budi Santoso / Teman 3) -->
+                        <div class="w-full shrink-0 flex justify-center p-4">
+                            <a href="teman3.html"
+                                class="block w-full max-w-sm rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 transform md:hover:-translate-y-3 group/card cursor-pointer relative bg-white">
+                                <div class="relative h-96 overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                        alt="Teman 3"
+                                        class="w-full h-full object-cover transform transition-transform duration-700 group-hover/card:scale-105">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent">
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-8 transform transition-transform duration-300">
+                                    <div
+                                        class="inline-block px-3 py-1 bg-teal-500 text-white rounded-full text-xs font-semibold tracking-wider mb-3">
+                                        BACKEND ENGINEER</div>
+                                    <h3 class="text-white text-3xl font-bold tracking-tight mb-1">Budi Santoso</h3>
+                                    <p
+                                        class="text-slate-300 text-sm flex items-center mt-2 group-hover/card:text-teal-300 transition-colors">
+                                        Lihat Biografi <i
+                                            class="fas fa-arrow-right ml-2 text-xs transform group-hover/card:translate-x-1 transition-transform"></i>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Navigation Controls (Arrows) -->
+                <!-- Prev Button -->
+                <button id="prevBtn" aria-label="Previous"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-8 bg-white/90 backdrop-blur border border-slate-100 w-12 h-12 lg:w-14 lg:h-14 rounded-full shadow-lg flex items-center justify-center text-slate-600 hover:text-blue-600 hover:bg-white hover:scale-110 transition-all duration-300 focus:outline-none z-10 opacity-70 hover:opacity-100 flex">
+                    <i class="fas fa-chevron-left text-xl"></i>
+                </button>
+                <!-- Next Button -->
+                <button id="nextBtn" aria-label="Next"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 lg:translate-x-8 bg-white/90 backdrop-blur border border-slate-100 w-12 h-12 lg:w-14 lg:h-14 rounded-full shadow-lg flex items-center justify-center text-slate-600 hover:text-blue-600 hover:bg-white hover:scale-110 transition-all duration-300 focus:outline-none z-10 opacity-70 hover:opacity-100 flex">
+                    <i class="fas fa-chevron-right text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Dots Indicator -->
+            <div class=" flex justify-center mt-10 space-x-3" id="dots-container">
+                <button
+                    class="dot active w-8 h-2.5 rounded-full bg-blue-600 transition-all duration-300 focus:outline-none"
+                    aria-label="Slide 1"></button>
+                <button
+                    class="dot w-2.5 h-2.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all duration-300 focus:outline-none"
+                    aria-label="Slide 2"></button>
+                <button
+                    class="dot w-2.5 h-2.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all duration-300 focus:outline-none"
+                    aria-label="Slide 3"></button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-10 text-center relative z-10">
+        <p class="text-slate-400 font-medium">&copy; 2026 BioSpace. Dibuat dengan cinta untuk tugas biografi.</p>
+    </footer>
+
+    <!-- Vanilla JS Logic for Slider -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const track = document.getElementById('carousel-track');
+            const slides = track.children;
+            const nextBtn = document.getElementById('nextBtn');
+            const prevBtn = document.getElementById('prevBtn');
+            const dots = document.querySelectorAll('.dot');
+            const sliderContainer = document.getElementById('slider-container');
+            const totalSlides = slides.length;
+
+            let currentIndex = 0;
+
+            const updateCarousel = (index) => {
+                // Loop around if out of bounds
+                if (index < 0) {
+                    currentIndex = totalSlides - 1;
+                } else if (index >= totalSlides) {
+                    currentIndex = 0;
+                } else {
+                    currentIndex = index;
+                }
+
+                // Move track horizontally
+                // We use -100% * currentIndex because each slide is 100% of the viewport width
+                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+                // Update dots styling
+                dots.forEach((dot, i) => {
+                    if (i === currentIndex) {
+                        dot.classList.remove('bg-slate-300', 'hover:bg-slate-400', 'w-2.5');
+                        dot.classList.add('bg-blue-600', 'w-8');
+                    } else {
+                        dot.classList.add('bg-slate-300', 'hover:bg-slate-400', 'w-2.5');
+                        dot.classList.remove('bg-blue-600', 'w-8');
+                    }
+                });
+            };
+
+            const nextSlide = () => updateCarousel(currentIndex + 1);
+            const prevSlide = () => updateCarousel(currentIndex - 1);
+
+            // Button Event Listeners
+            nextBtn.addEventListener('click', () => {
+                nextSlide();
+            });
+
+            prevBtn.addEventListener('click', () => {
+                prevSlide();
+            });
+
+            // Dots Event Listeners
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    updateCarousel(index);
+                });
+            });
+
+            // Initialize first state
+            updateCarousel(0);
+
+            // --- Touch / Swipe Support for Mobile Devices ---
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            track.addEventListener('touchstart', e => {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            track.addEventListener('touchend', e => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            }, { passive: true });
+
+            function handleSwipe() {
+                const swipeThreshold = 50; // minimum pixel untuk dianggap sebagai swipe
+                if (touchEndX < touchStartX - swipeThreshold) {
+                    nextSlide(); // Swipe Left (Next)
+                }
+                if (touchEndX > touchStartX + swipeThreshold) {
+                    prevSlide(); // Swipe Right (Prev)
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
